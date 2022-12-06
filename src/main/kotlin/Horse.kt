@@ -1,11 +1,9 @@
-class Horse :Animal() {
-    override val food:String="сено"
-    override val location:String="деревня"
-
+class Horse (food: String, location: String) : Animal(food, location) {
+    var iiigogo = "И-и-и-го-го"
     override fun makeNoise(){
-        print("И-и-и-го-го!")
+        print("$iiigogo!")
     }
     override fun eat(){
-        print("Ест сено")
+        print("Лошадь ест $food")
     }
 }

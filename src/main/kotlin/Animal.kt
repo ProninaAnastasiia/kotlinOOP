@@ -1,6 +1,11 @@
-open class Animal {
-    open val food:String=""
-    open val location:String=""
+open class Animal (food: String, location: String) {
+    var food: String = ""
+    var location:String=""
+
+    init{
+        this.food = food
+        this.location = location
+    }
 
     open fun makeNoise(){
         print("Животное издает звук")
